@@ -1,0 +1,7 @@
+F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\obj\Debug\WeatherDataService.csprojResolveAssemblyReference.cache
+F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\obj\Debug\WeatherDataService.exe
+F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\obj\Debug\WeatherDataService.pdb
+F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\WeatherDataService.exe.config
+F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\WeatherDataServiceDoc.XML
+F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\WeatherDataService.exe
+F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\WeatherDataService.pdb
