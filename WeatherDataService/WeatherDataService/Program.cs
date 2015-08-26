@@ -18,7 +18,7 @@ namespace WeatherDataService
                                          new Location("il", "telaviv"),
                                          new Location("us", "newyork") };
             IWeatherDataService service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Service.OPEN_WEATHER_MAP);//get data instance
-            Console.WriteLine(service.getWeatherData(myLocations[1]).LocationForecast.);
+            Console.WriteLine(service.getWeatherData(myLocations[1]));
         }
     }
 }
