@@ -14,9 +14,11 @@ namespace WeatherDataService
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Location[] myLocations = { new Location("uk", "london"), new Location("il", "telaviv"), new Location("us", "newyork") };
-            IWeatherDataService service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Service.OPEN_WEATHER_MAP);
-            Console.WriteLine(service.getWeatherData(myLocations[1]));
+            Location[] myLocations = { new Location("uk", "london"), //Create Location objects
+                                         new Location("il", "telaviv"),
+                                         new Location("us", "newyork") };
+            IWeatherDataService service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Service.OPEN_WEATHER_MAP);//get data instance
+            Console.WriteLine(service.getWeatherData(myLocations[1]).LocationForecast.);
         }
     }
 }
