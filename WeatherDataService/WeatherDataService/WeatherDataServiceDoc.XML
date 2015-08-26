@@ -453,7 +453,7 @@
             </summary>
             <returns>returns data</returns>
         </member>
-        <member name="M:WeatherDataService.WeatherData.Init(WeatherDataService.Location)">
+        <member name="M:WeatherDataService.WeatherData.init(WeatherDataService.Location)">
             <summary>
             Init database , download from web service API and load data from file database
             </summary>

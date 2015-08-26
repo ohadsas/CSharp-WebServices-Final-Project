@@ -39,7 +39,7 @@ namespace WeatherDataService
         {
             if (location != null)
             {
-                Init(location);// init forecast
+                init(location);// init forecast
             }
             else throw new WeatherDataServiceException("No location set");
             return weatherData;
@@ -70,7 +70,7 @@ namespace WeatherDataService
         /// <summary>
         /// Init database , download from web service API and load data from file database
         /// </summary>
-        private void Init(Location location) // init data 
+        private void init(Location location) // init data 
         {
             DownloadXmlToDataBase(location.City, location.State);//download from API
             locationForecast = new Forecast(loadData(location.City, location.State));//allocate forecast
