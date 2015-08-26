@@ -1,0 +1,536 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WeatherDataService</name>
+    </assembly>
+    <members>
+        <member name="T:WeatherDataService.Forecast">
+            <summary>
+            This class contain all forecast data
+            </summary>
+        </member>
+        <member name="F:WeatherDataService.Forecast.location">
+            <summary>
+            Forecast var as API values
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.#ctor(System.String)">
+            <summary>
+            Forecast class constructor
+            </summary>
+            <param name="xmlData">xmlData contain the XML string and send it to the parsing method</param>
+        </member>
+        <member name="M:WeatherDataService.Forecast.initForecastObjects">
+            <summary>
+            initForecastObjects init and allocate all forecast objects
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:WeatherDataService.Forecast.parsingXmlData(System.String@)">
+            <summary>
+            Parsing data
+            </summary>
+            <param name="xmlData">var that contain the XML string</param>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastLocation">
+            <summary>
+            ForecastLocation properties
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastSunRise">
+            <summary>
+            ForecastSunRise property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastTemperature">
+            <summary>
+            ForecastTemperature property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastHumidity">
+            <summary>
+            ForecastHumidity property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastPressure">
+            <summary>
+            ForecastPressure property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastWindSpeed">
+            <summary>
+            ForecastWindSpeed property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastWindDirection">
+            <summary>
+            ForecastWindDirection property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastClouds">
+            <summary>
+            ForecastClouds property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastPrecipitation">
+            <summary>
+            ForecastPrecipitation property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastWeather">
+            <summary>
+            ForecastWeather property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.ForecastLastupdate">
+            <summary>
+            ForecastLastupdate property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.SunRise">
+            <summary>
+            inner class
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.SunRise.#ctor">
+            <summary>
+            SunRise Constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.SunRise.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.SunRise.Rise">
+            <summary>
+            Rise property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.SunRise.Set">
+            <summary>
+            Set property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.Temperature">
+            <summary>
+            class Temperature
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Temperature.#ctor">
+            <summary>
+            Temperature constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Temperature.ConvertToCelsius">
+            <summary>
+            Tool  Convert To Celsius from Kelvin
+            </summary>
+            <returns>Temperature object </returns>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Temperature.ToString">
+            <summary>
+            Tostring override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Temperature.Unit">
+            <summary>
+            Unit property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Temperature.Value">
+            <summary>
+            Value property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Temperature.Min">
+            <summary>
+            Min property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Temperature.Max">
+            <summary>
+            Max property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.Humidity">
+            <summary>
+             class Humidity
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Humidity.#ctor">
+            <summary>
+              Humidity constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Humidity.ToString">
+            <summary>
+            TosTring override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Humidity.Unit">
+            <summary>
+            Unit property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Humidity.Value">
+            <summary>
+            Value property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.Pressure">
+            <summary>
+            class Pressure
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Pressure.#ctor">
+            <summary>
+            Pressure constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Pressure.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Pressure.Unit">
+            <summary>
+            Unit property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Pressure.Value">
+            <summary>
+            Value property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.WindSpeed">
+            <summary>
+            class WindSpeed
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.WindSpeed.#ctor">
+            <summary>
+            WindSpeed constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.WindSpeed.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.WindSpeed.Value">
+            <summary>
+            Value property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.WindSpeed.Name">
+            <summary>
+            Name property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.WindDirection">
+            <summary>
+            class WindDirection
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.WindDirection.#ctor">
+            <summary>
+            WindDirection constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.WindDirection.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.WindDirection.Deg">
+            <summary>
+            Deg property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.WindDirection.Code">
+            <summary>
+            Code property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.WindDirection.Name">
+            <summary>
+            Name property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.Clouds">
+            <summary>
+             class Clouds
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Clouds.#ctor">
+            <summary>
+            Clouds constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Clouds.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Clouds.Name">
+            <summary>
+            Name property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Clouds.Value">
+            <summary>
+            Value property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.Precipitation">
+            <summary>
+            class Precipitation
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Precipitation.#ctor">
+            <summary>
+            Precipitation constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Precipitation.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Precipitation.Mode">
+            <summary>
+            Mode property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.Weather">
+            <summary>
+            class Weather
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Weather.#ctor">
+            <summary>
+            Weather constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Weather.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Weather.Number">
+            <summary>
+            Number property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Weather.Value">
+            <summary>
+            Value property
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Weather.Icon">
+            <summary>
+            Icon property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.Forecast.Lastupdate">
+            <summary>
+            class Lastupdate
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Lastupdate.#ctor">
+            <summary>
+            Lastupdate constructor
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Forecast.Lastupdate.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="P:WeatherDataService.Forecast.Lastupdate.Value">
+            <summary>
+            Value property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.IWeatherDataService">
+            <summary>
+            WeatherDataService interface
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.IWeatherDataService.getWeatherData(WeatherDataService.Location)">
+            <summary>
+            Interface method 
+            </summary>
+            <param name="location">parameter that contain the wanted location fields</param>
+            <returns>Instance for weather data</returns>
+        </member>
+        <member name="T:WeatherDataService.Location">
+            <summary>
+            This class send to data service as object , the fields will send to the data service for current location data
+            </summary>
+        </member>
+        <member name="F:WeatherDataService.Location.state">
+            <summary>
+            city and state var for specific location
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Location.#ctor(System.String,System.String)">
+            <summary>
+            Constructor that gets the city and state 
+            </summary>
+            <param name="stateVal">parameter for state</param>
+            <param name="cityVal">parameter for city</param>
+        </member>
+        <member name="M:WeatherDataService.Location.#ctor">
+            <summary>
+            This constructor is "default" constructor init in case of empty location declaration 
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Location.ToString">
+            <summary>
+            ToString method
+            </summary>
+            <returns>String with vars values</returns>
+        </member>
+        <member name="P:WeatherDataService.Location.State">
+            <summary>
+            Location properties
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Location.City">
+            <summary>
+            City properties
+            </summary>
+        </member>
+        <member name="P:WeatherDataService.Location.Id">
+            <summary>
+            /// Id properties
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.Program.Main(System.String[])">
+            <summary>
+            Starting application
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="T:WeatherDataService.WeatherData">
+            <summary>
+            WeatherData class  - connect to API and returns current location weather data
+            </summary>
+        </member>
+        <member name="F:WeatherDataService.WeatherData.weatherData">
+             <summary>
+            weatherData is a Singleton var 
+            locationWeather is object to download the current location data
+             </summary>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.getWeatherData(WeatherDataService.Location)">
+            <summary>
+            Get weather data instance
+            </summary>
+            <param name="location">receive location object as parameter</param>
+            <returns>returns the instance  </returns>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.getWeatherDataService">
+            <summary>
+            static getWeatherDataService
+            </summary>
+            <returns>returns data</returns>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.init(WeatherDataService.Location)">
+            <summary>
+            Init database , download from web service API and load data from file database
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.ToString">
+            <summary>
+            ToString override
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.DownloadXmlToDataBase(System.String,System.String)">
+            <summary>
+            Download XML file from API
+            </summary>
+            <param name="location">city field </param>
+            <param name="state"> state fields</param>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.MakeDir(System.String)">
+            <summary>
+            Create Dir for required data 
+            </summary>
+            <param name="dirName">contain the folder name in the data base</param>
+            <returns>returns the path to file in data base</returns>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.WriteToFile(System.String@,System.String@,System.String@)">
+            <summary>
+            Write data to database file
+            </summary>
+            <param name="data">data to write in database </param>
+            <param name="path">data path in data base </param>
+            <param name="fileName">XML name in data base</param>
+        </member>
+        <member name="M:WeatherDataService.WeatherData.loadData(System.String,System.String)">
+            <summary>
+            load data from database
+            </summary>
+            <param name="location">wanted country city in database</param>
+            <param name="state">wanted state  in database</param>
+            <returns></returns>
+        </member>
+        <member name="P:WeatherDataService.WeatherData.LocationForecast">
+            <summary>
+            Forecast property
+            </summary>
+        </member>
+        <member name="T:WeatherDataService.WeatherDataServiceException">
+            <summary>
+            WeatherDataService class to  deals with exception
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.WeatherDataServiceException.#ctor(System.String)">
+            <summary>
+            WeatherDataServiceException
+            </summary>
+            <param name="str">Exception massage</param>
+        </member>
+        <member name="T:WeatherDataService.WeatherDataServiceFactory">
+            <summary>
+            WeatherDataServiceFactory 
+            </summary>
+        </member>
+        <member name="M:WeatherDataService.WeatherDataServiceFactory.getWeatherDataService(WeatherDataService.WeatherDataServiceFactory.Service)">
+            <summary>
+            This method return instance of the wanted service
+            </summary>
+            <param name="service">gets the wanted service</param>
+            <returns></returns>
+        </member>
+        <member name="T:WeatherDataService.WeatherDataServiceFactory.Service">
+            <summary>
+            Enumes for wanted service providers
+            </summary>
+        </member>
+        <member name="F:WeatherDataService.WeatherDataServiceFactory.Service.OPEN_WEATHER_MAP">
+            <summary>
+            OPEN_WEATHER_MAP is Enum var for weather service 
+            </summary>
+        </member>
+    </members>
+</doc>
