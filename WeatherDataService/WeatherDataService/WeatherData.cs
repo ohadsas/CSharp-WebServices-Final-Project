@@ -14,7 +14,7 @@ namespace WeatherDataService
     /// WeatherData class  - connect to API and returns current location weather data
     /// </summary>
 
-   
+
     public class WeatherData : IWeatherDataService
     {
         /// <summary>
@@ -27,20 +27,19 @@ namespace WeatherDataService
 
         private WeatherData()
         {
-           
+
         } // private contractor
 
         /// <summary>
         /// Get weather data instance
         /// </summary>
-        /// <param name="location"></param>
+        /// <param name="location">receive location object as parameter</param>
         /// <returns>returns the instance  </returns>
         public WeatherData getWeatherData(Location location)
         {
             if (location != null)
             {
                 Init(location);// init forecast
-
             }
             else throw new WeatherDataServiceException("No location set");
             return weatherData;
@@ -49,7 +48,7 @@ namespace WeatherDataService
         /// <summary>
         /// static getWeatherDataService
         /// </summary>
-        /// <returns></returns>
+        /// <returns>returns data</returns>
         public static WeatherData getWeatherDataService()
         {
             return weatherData;

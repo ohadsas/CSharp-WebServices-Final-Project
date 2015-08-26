@@ -10,7 +10,7 @@ namespace WeatherDataService
     /// <summary>
     /// This class contain all forecast data
     /// </summary>
-   public class Forecast
+    public class Forecast
     {
 
         /// <summary>
@@ -60,17 +60,19 @@ namespace WeatherDataService
             this.lastupdate = new Lastupdate();
 
         }
-       /// <summary>
-       /// ToString override
-       /// </summary>
-       /// <returns>string</returns>
+        /// <summary>
+        /// ToString override
+        /// </summary>
+        /// <returns>string</returns>
         public override string ToString()
         {
             return ForecastLastupdate.ToString() + "\n\n" + ForecastLocation.ToString() + "\n" + ForecastWeather.ToString() + "\n" + ForecastSunRise.ToString() + "\n" + ForecastTemperature.ToString() + "\n" + ForecastHumidity + "\n" +
 ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + ForecastWindDirection.ToString() + "\n" + ForecastClouds.ToString() + "\n" + ForecastPrecipitation.ToString();
         }
 
-     
+
+
+
         #region Forecast inner classes properties
         /// <summary>
         /// ForecastLocation properties
@@ -86,9 +88,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
                 this.location = value;
             }
         }
-       /// <summary>
+        /// <summary>
         /// ForecastSunRise property
-       /// </summary>
+        /// </summary>
         public SunRise ForecastSunRise
         {
             get
@@ -294,9 +296,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class temperature
-       /// <summary>
+        /// <summary>
         /// class Temperature
-       /// </summary>
+        /// </summary>
         public class Temperature
         {
             private string unit, value, min, max;
@@ -311,6 +313,20 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
                 Max = "00";
 
             }
+            /// <summary>
+            /// Tool  Convert To Celsius from Kelvin
+            /// </summary>
+            /// <returns>Temperature object </returns>
+            public Temperature ConvertToCelsius()
+            {
+                Unit = "Celsius";
+                Value = (double.Parse(Value) - 273.15).ToString();
+                Min = (double.Parse(Min) - 273.15).ToString();
+                Max = (double.Parse(Max) - 273.15).ToString();
+                return this;
+            }
+
+
             /// <summary>
             /// Unit property
             /// </summary>
@@ -391,9 +407,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class humidity
-       /// <summary>
+        /// <summary>
         ///  class Humidity
-       /// </summary>
+        /// </summary>
         public class Humidity
         {
             private string value, unit;
@@ -452,9 +468,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class pressure
-       /// <summary>
+        /// <summary>
         /// class Pressure
-       /// </summary>
+        /// </summary>
         public class Pressure
         {
             private string unit, value;
@@ -514,9 +530,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class windSpeed
-       /// <summary>
+        /// <summary>
         /// class WindSpeed
-       /// </summary>
+        /// </summary>
         public class WindSpeed
         {
             private string value, name;
@@ -575,9 +591,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class windDirection
-       /// <summary>
+        /// <summary>
         /// class WindDirection
-       /// </summary>
+        /// </summary>
         public class WindDirection
         {
             private string deg, code, name;
@@ -655,9 +671,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
 
         #region inner class clouds
 
-       /// <summary>
+        /// <summary>
         ///  class Clouds
-       /// </summary>
+        /// </summary>
         public class Clouds
         {
             private string value, name;
@@ -716,9 +732,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class Precipitation
-       /// <summary>
+        /// <summary>
         /// class Precipitation
-       /// </summary>
+        /// </summary>
         public class Precipitation
         {
             private string mode;
@@ -757,9 +773,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class Weather
-       /// <summary>
+        /// <summary>
         /// class Weather
-       /// </summary>
+        /// </summary>
         public class Weather
         {
             private string number, value, icon;
@@ -827,9 +843,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
         #endregion
 
         #region inner class Last update
-       /// <summary>
+        /// <summary>
         /// class Lastupdate
-       /// </summary>
+        /// </summary>
         public class Lastupdate
         {
             private string value;
@@ -947,9 +963,9 @@ ForecastPressure.ToString() + "\n" + ForecastWindSpeed.ToString() + "\n" + Forec
                                           }),
                                lastupdate = (from l in doc.Descendants("lastupdate")
                                              select new
-                                            {
-                                                value = l.Attribute("value").Value
-                                            })
+                                             {
+                                                 value = l.Attribute("value").Value
+                                             })
                            };
 
 

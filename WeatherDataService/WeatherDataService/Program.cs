@@ -16,7 +16,7 @@ namespace WeatherDataService
         {
             Location[] myLocations = { new Location("uk", "london"), new Location("il", "telaviv"), new Location("us", "newyork") };
             IWeatherDataService service = WeatherDataServiceFactory.getWeatherDataService(WeatherDataServiceFactory.Service.OPEN_WEATHER_MAP);
-            Console.WriteLine(service.getWeatherData(myLocations[0]));        
+            Console.WriteLine(service.getWeatherData(myLocations[1]));
         }
     }
 }

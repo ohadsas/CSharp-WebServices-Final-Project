@@ -128,6 +128,12 @@
             Temperature constructor
             </summary>
         </member>
+        <member name="M:WeatherDataService.Forecast.Temperature.ConvertToCelsius">
+            <summary>
+            Tool  Convert To Celsius from Kelvin
+            </summary>
+            <returns>Temperature object </returns>
+        </member>
         <member name="M:WeatherDataService.Forecast.Temperature.ToString">
             <summary>
             Tostring override
@@ -371,7 +377,7 @@
             <summary>
             Interface method 
             </summary>
-            <param name="location">var that contain the wanted location fields</param>
+            <param name="location">parameter that contain the wanted location fields</param>
             <returns>Instance for weather data</returns>
         </member>
         <member name="T:WeatherDataService.Location">
@@ -388,8 +394,8 @@
             <summary>
             Constructor that gets the city and state 
             </summary>
-            <param name="stateVal"></param>
-            <param name="cityVal"></param>
+            <param name="stateVal">parameter for state</param>
+            <param name="cityVal">parameter for city</param>
         </member>
         <member name="M:WeatherDataService.Location.#ctor">
             <summary>
@@ -438,14 +444,14 @@
             <summary>
             Get weather data instance
             </summary>
-            <param name="location"></param>
+            <param name="location">receive location object as parameter</param>
             <returns>returns the instance  </returns>
         </member>
         <member name="M:WeatherDataService.WeatherData.getWeatherDataService">
             <summary>
             static getWeatherDataService
             </summary>
-            <returns></returns>
+            <returns>returns data</returns>
         </member>
         <member name="M:WeatherDataService.WeatherData.Init(WeatherDataService.Location)">
             <summary>

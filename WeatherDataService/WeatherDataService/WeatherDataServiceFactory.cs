@@ -9,26 +9,26 @@ namespace WeatherDataService
     /// <summary>
     /// WeatherDataServiceFactory 
     /// </summary>
-   public class WeatherDataServiceFactory
+    public class WeatherDataServiceFactory
     {
-       /// <summary>
+        /// <summary>
         /// Enumes for wanted service providers
-       /// </summary>
-       public enum Service 
-       {
-           /// <summary>
-           /// OPEN_WEATHER_MAP is Enum var for weather service 
-           /// </summary>
-           OPEN_WEATHER_MAP
-       }
-      /// <summary>
-      /// This method return instance of the wanted service
-      /// </summary>
-      /// <param name="service">gets the wanted service</param>
-      /// <returns></returns>
-       public static WeatherData getWeatherDataService(Service service)
+        /// </summary>
+        public enum Service
         {
-           
+            /// <summary>
+            /// OPEN_WEATHER_MAP is Enum var for weather service 
+            /// </summary>
+            OPEN_WEATHER_MAP
+        }
+        /// <summary>
+        /// This method return instance of the wanted service
+        /// </summary>
+        /// <param name="service">gets the wanted service</param>
+        /// <returns></returns>
+        public static WeatherData getWeatherDataService(Service service)
+        {
+
             switch (service)
             {
                 case Service.OPEN_WEATHER_MAP:

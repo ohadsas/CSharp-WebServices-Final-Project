@@ -22,8 +22,8 @@ namespace WeatherDataService
         /// <summary>
         /// Constructor that gets the city and state 
         /// </summary>
-        /// <param name="stateVal"></param>
-        /// <param name="cityVal"></param>
+        /// <param name="stateVal">parameter for state</param>
+        /// <param name="cityVal">parameter for city</param>
         public Location(string stateVal, string cityVal)
         {
             State = stateVal;
@@ -35,15 +35,15 @@ namespace WeatherDataService
         /// <summary>
         /// This constructor is "default" constructor init in case of empty location declaration 
         /// </summary>
-        public Location() 
+        public Location()
         {
-            State = "il";//I prefer to use Israel as default if string empty
+            State = "IL";//I prefer to use Israel as default if string empty
             City = "Telaviv";//I prefer to use Telaviv as default if string empty
             Id = "0000";//I prefer to use Telaviv as default if string empty
 
         }
 
-      
+
 
 
         /// <summary>
@@ -96,7 +96,7 @@ namespace WeatherDataService
                 {
                     this.id = value;
                 }
-                
+
             }
         }
         #endregion

@@ -5,3 +5,10 @@ F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\Wea
 F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\WeatherDataServiceDoc.XML
 F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\WeatherDataService.exe
 F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataService\WeatherDataService.pdb
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataService\WeatherDataService.exe.config
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataService\obj\Debug\WeatherDataService.exe
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataService\WeatherDataServiceDoc.XML
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataService\obj\Debug\WeatherDataService.pdb
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataService\obj\Debug\WeatherDataService.csprojResolveAssemblyReference.cache
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataService\WeatherDataService.exe
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataService\WeatherDataService.pdb
