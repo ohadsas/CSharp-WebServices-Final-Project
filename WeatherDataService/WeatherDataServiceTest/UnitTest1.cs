@@ -24,10 +24,11 @@ namespace WeatherDataServiceTest
                 {
                     xml = web.DownloadString(url);//get XML data to string
                 }
+                Assert.Fail("no exception thrown");
             }
             catch (WebException e)
             {
-                Console.Clear();
+               
                 Console.WriteLine(e.Message + "]\n\nReason: No Internet connection\n");
             }
         }
