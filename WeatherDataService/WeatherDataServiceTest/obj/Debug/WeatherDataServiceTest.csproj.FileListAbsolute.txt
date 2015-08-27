@@ -5,3 +5,10 @@ F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataServiceTest
 F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataServiceTest\obj\Debug\WeatherDataServiceTest.csprojResolveAssemblyReference.cache
 F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataServiceTest\obj\Debug\WeatherDataServiceTest.dll
 F:\Github\CS-web-service-final-project\WeatherDataService\WeatherDataServiceTest\obj\Debug\WeatherDataServiceTest.pdb
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataServiceTest\bin\Debug\WeatherDataServiceTest.dll
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataServiceTest\bin\Debug\WeatherDataServiceTest.pdb
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataServiceTest\bin\Debug\WeatherDataService.exe
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataServiceTest\bin\Debug\WeatherDataService.pdb
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataServiceTest\obj\Debug\WeatherDataServiceTest.csprojResolveAssemblyReference.cache
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataServiceTest\obj\Debug\WeatherDataServiceTest.dll
+F:\Github\CSharp-WebServices-Final-Project\WeatherDataService\WeatherDataServiceTest\obj\Debug\WeatherDataServiceTest.pdb
