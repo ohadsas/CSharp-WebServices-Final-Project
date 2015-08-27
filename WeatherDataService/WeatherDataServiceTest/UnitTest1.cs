@@ -12,25 +12,20 @@ namespace WeatherDataServiceTest
         /// Check if on line
         /// </summary>
         [TestMethod]
+      [ExpectedException(typeof(WebException))]
         public void TestMethod1()
         {
            
             string url = "http://api.openweathermap.org/data/2.5/weather?q=" + "il" + "," + "telaviv" + "&mode=xml";
             string xml;
             Console.WriteLine("Getting data from server...\n");
-            try
-            {
+          
                 using (WebClient web = new WebClient())
                 {
                     xml = web.DownloadString(url);//get XML data to string
                 }
-                Assert.Fail("no exception thrown");
-            }
-            catch (WebException e)
-            {
-               
-                Console.WriteLine(e.Message + "]\n\nReason: No Internet connection\n");
-            }
+           
+         
         }
     }
 }
